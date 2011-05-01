@@ -1,0 +1,20 @@
+! Xterm resources
+XTerm*termName:         xterm
+XTerm*background:       black
+XTerm*foreground:       white
+XTerm*scrollBar:        false
+XTerm*scrollKey:        true
+XTerm*faceName:         DejaVu Sans Mono !Inconsolata
+XTerm*faceSize:         10
+XTerm*saveLines:        3000
+!XTerm*eightBitInput:    true
+!XTerm*altSendsEscape:   true
+XTerm*metaSendsEscape:  true
+XTerm*eightBitInput:    false
+!Xterm*utf8:            1
+XTerm*locale:           true
+XTerm*highlightSelection:true
+! XTerm*pointerColorBackground: black
+
+! sent urgent message to WM
+XTerm*bellIsUrgent:     true
