@@ -1,0 +1,4 @@
+# Write your default config options here!
+[default]
+#if not set I can't use the keyboard to controlling mplayer...
+joystick=no
