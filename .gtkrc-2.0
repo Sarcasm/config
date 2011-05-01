@@ -1,5 +1,9 @@
 # -*- mode: conf -*-
+# Install murrine engine on Debian:
+# sudo aptitude install gtk2-engines-murrine
+
 gtk-font-name           = "DejaVu 9"
 gtk-theme-name          = "Zenburn-Murrine"
+
 # include "/home/papin_g/.themes/Zenburn-Murrine/gtk-2.0/gtkrc"
 # gtk-icon-theme-name="/home/papin_g/.icons/Feel_of_Japan"

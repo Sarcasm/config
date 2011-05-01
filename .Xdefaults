@@ -1,3 +1,40 @@
+! on Debian
+! sudo aptitude install dmz-cursor-theme
+Xcursor*theme: Vanilla-DMZ-AA
+Xcursor*size:  22
+
+! URxvt ressources
+! Default is M-s, set a "dead" key
+urxvt.searchable-scrollback:Thai_sarae
+URxvt*termName:         rxvt-unicode
+URxvt*font:             xft:DejaVu Sans Mono-10
+URxvt*scrollBar:        false
+URxvt*foreground:       #B0B0B0
+URxvt*background:       #0c0c0c
+URxvt.urgentOnBell:     true
+URxvt*pointerBlank:     true    !hide mouse pointer
+URxvt.buffered:         true
+URvt*saveLines:         3000
+! urxvt*backgroundPixmap: /home/papin_g/.config/awesome/themes/perso/perso-background-blr.png;root
+! urxvt*depth:            32
+! urxvt*background:       rgba:1000/1000/1500/aaaa
+! URxvt*fading:           15
+! URxvt*fadeColor:        Blue
+! URxvt*blurRadius:       20
+! URxvt*shading:          75
+! URxvt*tintColor:        Grey20
+! URxvt*shading:          350
+! URxvt.iconFile:         /usr/share/pixmaps/rxvt-unicode.png
+! rxvt*inheritPixmap:     true
+
+! Change background attributes on fly keyboard
+! urxvt*keysym.C-1:           command:\033]20;/home/papin_g/.config/awesome/themes/perso/perso-background-blr2.png;root\007
+! urxvt*keysym.C-1:         command:\033]705;Grey10\007\033]50;xft:DejaVu Sans Mono-10\007
+! urxvt*keysym.C-1:         command:\033]705;Grey10\007\033]50;xft:DejaVu Sans Mono-10:bold\007
+! urxvt*keysym.C-2:           command:\033]20;/home/papin_g/.config/awesome/themes/perso/perso-background-blr.png;root\007
+urxvt*keysym.C-3:       command:\033]705;Grey30\007
+urxvt*keysym.C-4:       command:\033]705;Grey70\007
+
 ! Xterm resources
 XTerm*termName:         xterm
 XTerm*background:       black
@@ -15,6 +52,5 @@ XTerm*eightBitInput:    false
 XTerm*locale:           true
 XTerm*highlightSelection:true
 ! XTerm*pointerColorBackground: black
-
 ! sent urgent message to WM
 XTerm*bellIsUrgent:     true
