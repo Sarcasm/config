@@ -32,6 +32,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -f /usr/local/share/gtags/globash.rc ]; then
+    alias globash='. /usr/local/share/gtags/globash.rc'
+fi
+
 # export MAKEFLAGS='-j 2'
 export FIGNORE=".o:~"
 # Emacs en mode serveur - client
