@@ -1,0 +1,14 @@
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+text/plain; emacsclient --alternate-editor="" -nc '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+text/*; emacsclient --alternate-editor="" -nc '%s'; test=test -n "$DISPLAY"; nametemplate=%s.pdf
+# -----  User Section Ends  ----- #
+
+###############################################################################
