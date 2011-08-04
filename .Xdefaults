@@ -1,7 +1,21 @@
+! XFT
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+Xft.rgba:       rgb
+! hintslight | hintsmedium | hintsfull
+! Xft.hintstyle:hintsmedium
+! rgba subpixel hinting (for LCDs)
+! Xft.rgba:     none
+
 ! on Debian
 ! sudo aptitude install dmz-cursor-theme
 Xcursor*theme: Vanilla-DMZ-AA
 Xcursor*size:  22
+
+Emacs.FontBackend: xft
+Emacs.font: DejaVu Sans Mono-10
 
 ! URxvt ressources
 ! Default is M-s, set a "dead" key
@@ -10,7 +24,8 @@ URxvt*termName:         rxvt-unicode
 URxvt*font:             xft:DejaVu Sans Mono-10
 URxvt*scrollBar:        false
 URxvt*foreground:       #B0B0B0
-URxvt*background:       #0c0c0c
+! URxvt*background:       #0c0c0c
+URxvt*background:       #131313
 URxvt.urgentOnBell:     true
 URxvt*pointerBlank:     true    !hide mouse pointer
 URxvt.buffered:         true
@@ -37,7 +52,8 @@ urxvt*keysym.C-4:       command:\033]705;Grey70\007
 
 ! Xterm resources
 XTerm*termName:         xterm
-XTerm*background:       black
+! XTerm*background:       black
+XTerm*background:       #131313
 XTerm*foreground:       white
 XTerm*scrollBar:        false
 XTerm*scrollKey:        true
@@ -46,9 +62,9 @@ XTerm*faceSize:         10
 XTerm*saveLines:        3000
 !XTerm*eightBitInput:    true
 !XTerm*altSendsEscape:   true
+!Xterm*utf8:            1
 XTerm*metaSendsEscape:  true
 XTerm*eightBitInput:    false
-!Xterm*utf8:            1
 XTerm*locale:           true
 XTerm*highlightSelection:true
 ! XTerm*pointerColorBackground: black
