@@ -2,3 +2,4 @@
 [default]
 #if not set I can't use the keyboard to controlling mplayer...
 joystick=no
+subcp=utf8
