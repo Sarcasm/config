@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export GTAGSLIBPATH=.:..:../..:../../..
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -69,7 +71,7 @@ export EDITOR='emacsclient -t'
 
 export PAGER=less
 
-alias re='make clean ; make'
+alias re='make -B -j 4'
 alias lynx='lynx -accept_all_cookies'
 
 # Complete .pdf and directory
@@ -81,6 +83,7 @@ alias reload='. ~/.bashrc'
 export GREP_COLORS='mt=01;34:fn=01;34:ln=04;31:bn=30:se=33'
 alias grep='grep --color=auto'
 
+alias c='cd -P'
 alias ls='ls -F --color=auto --hide="*~"'
 alias ll='ls -sh1'
 alias lh='ls -sh1'
@@ -105,7 +108,7 @@ clean()
     then
 	SEARCH=${1}
     fi
-    find ${SEARCH} \( -name "*~" -or -name ".*~" -or -name "*\#" -or -name "core" -or -name "*.core" \) -exec rm -fv {} \;
+    find ${SEARCH} \( -name "*~" -or -name ".*~" -or -name "*\#" -or -name "*.core" \) -exec rm -fv {} \;
 }
 
 # Easy extract
